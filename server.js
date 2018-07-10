@@ -75,4 +75,10 @@ app.get('/to-do', (req, res) => {
   });
 })
 
+app.get('projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageName: 'My Projects'
+  });
+})
+
 app.listen(port, () => console.log(`Server up on Port ${port}`));
